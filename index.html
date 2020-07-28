@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-    <head>
+<head>
 
-        <style>
-            .value_enter{
+<style>
+.value_enter{
     height: 500px;
     width: 400px;
     padding: 5px;
@@ -26,22 +26,21 @@
     float: left;
 }
 
-
-        </style>
-
+</style>
 
 
-    </head>
+
+</head>
 
 <body>
-    <h1 align="center">Line Clipping</h1> <br><br>
+<h1 align="center">Line Clipping</h1> <br><br>
 
-<<<<<<< HEAD
+
 <h2>Enter the values</h2>
-=======
-    <div class="value_enter">
-        <h2 >Enter the values</h2>
->>>>>>> aa90ed3cd871ccf9abb966ac699f5218f2b8b729
+
+<div class="value_enter">
+<h2 >Enter the values</h2>
+
 <p>X<sub>min</sub></p><input type="number" id="xmin">
 <p>X<sub>max</sub></p><input type="number" id="xmax">
 <p>Y<sub>min</sub></p><input type="number" id="ymin">
@@ -49,10 +48,10 @@
 <br><br>
 <button type="button" onClick="fetch()">Submit</button><br><br>
 
-    </div>
+</div>
 
-    <div class="line_value">
-        <h2>Enter Coordinates for a line</h2>
+<div class="line_value">
+<h2>Enter Coordinates for a line</h2>
 <p>X<sub>1</sub></p><input type="number" id="x1">
 <p>Y<sub>1</sub></p><input type="number" id="y1">
 <p>X<sub>2</sub></p><input type="number" id="x2">
@@ -60,17 +59,14 @@
 <br><br>
 <button type="button" name="button" onClick="calc()">Calculate</button><br><br>
 
-
-    </div>
-
-
-    <div class="para">
-        <p>
-
-        </p>
+</div>
 
 
-    </div>
+<div class="para">
+<p></p>
+
+
+</div>
 
 
 <script type="text/javascript">
@@ -84,7 +80,6 @@ function fetch(){
   ymax = document.getElementById('ymax').value;
 }
 
-<<<<<<< HEAD
 function check(x, y){
 
     var v = 0 ;
@@ -94,10 +89,9 @@ function check(x, y){
     if(x < xmin)v|=1;
 
     return v;
-=======
+
 function check(){
 
->>>>>>> aa90ed3cd871ccf9abb966ac699f5218f2b8b729
 }
 
 function calc(){
@@ -105,10 +99,7 @@ function calc(){
     y1 = document.getElementById('y1').value;
     x2 = document.getElementById('x2').value;
     y2 = document.getElementById('y2').value;
-
     var p1 = check(x2,y2);
-
-
 
 }
 
