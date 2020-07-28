@@ -5,22 +5,44 @@
 
 <h2
 >Enter the values</h2>
-<p>X<sub>min</sub></p><input type="text" name="xmin" id="xmin">
-<p>X<sub>max</sub></p><input type="text" name="xmax" id="xmax">
-<p>Y<sub>min</sub></p><input type="text" name="ymin" id="ymin">
-<p>Y<sub>max</sub></p><input type="text" name="xmax" id="xmax">
+<p>X<sub>min</sub></p><input type="number" id="xmin">
+<p>X<sub>max</sub></p><input type="number" id="xmax">
+<p>Y<sub>min</sub></p><input type="number" id="ymin">
+<p>Y<sub>max</sub></p><input type="number" id="ymax">
 <br><br>
-<button type="button" name="button" onclick="fetch()">Submit</button><br><br>
+<button type="button" onClick="fetch()">Submit</button><br><br>
 
 <h2>Enter Coordinates for a line</h2>
-<p>X<sub>1</sub></p><input type="text" name="xmin" id="xmin">
-<p>Y<sub>1</sub></p><input type="text" name="xmax" id="xmax">
-<p>X<sub>2</sub></p><input type="text" name="ymin" id="ymin">
-<p>Y<sub>2</sub></p><input type="text" name="xmax" id="xmax">
+<p>X<sub>1</sub></p><input type="number" id="x1">
+<p>Y<sub>1</sub></p><input type="number" id="y1">
+<p>X<sub>2</sub></p><input type="number" id="x2">
+<p>Y<sub>2</sub></p><input type="number" id="y2">
 <br><br>
 <button type="button" name="button" onclick="calc()">Calculate</button><br><br>
 
 <script type="text/javascript">
+var xmin,xmax,ymin,ymax;
+var x1,y1,x2,y2;
+
+function fetch(){
+  xmin = document.getElementById('xmin').value;
+  xmax = document.getElementById('xmax').value;
+  ymin = document.getElementById('ymin').value;
+  ymax = document.getElementById('ymax').value;
+}
+
+function check(){
+    
+}
+
+function calc(){
+    x1 = document.getElementById('x1').value;
+    y1 = document.getElementById('y1').value;
+    x2 = document.getElementById('x2').value;
+    y2 = document.getElementById('y2').value;
+
+
+}
 
 </script>
 </body>
