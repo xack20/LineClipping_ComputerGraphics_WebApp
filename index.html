@@ -3,8 +3,7 @@
 <body>
 <h1>Line Clipping</h1> <br><br>
 
-<h2
->Enter the values</h2>
+<h2>Enter the values</h2>
 <p>X<sub>min</sub></p><input type="number" id="xmin">
 <p>X<sub>max</sub></p><input type="number" id="xmax">
 <p>Y<sub>min</sub></p><input type="number" id="ymin">
@@ -18,7 +17,7 @@
 <p>X<sub>2</sub></p><input type="number" id="x2">
 <p>Y<sub>2</sub></p><input type="number" id="y2">
 <br><br>
-<button type="button" name="button" onclick="calc()">Calculate</button><br><br>
+<button type="button" name="button" onClick="calc()">Calculate</button><br><br>
 
 <script type="text/javascript">
 var xmin,xmax,ymin,ymax;
@@ -31,8 +30,15 @@ function fetch(){
   ymax = document.getElementById('ymax').value;
 }
 
-function check(){
-    
+function check(x, y){
+
+    var v = 0 ;
+    if(y > ymax )v|=8;
+    if(y < ymin)v|=4;
+    if(x > xmax)v|=2;
+    if(x < xmin)v|=1;
+
+    return v;
 }
 
 function calc(){
@@ -40,6 +46,9 @@ function calc(){
     y1 = document.getElementById('y1').value;
     x2 = document.getElementById('x2').value;
     y2 = document.getElementById('y2').value;
+
+    var p1 = check(x2,y2);
+
 
 
 }
