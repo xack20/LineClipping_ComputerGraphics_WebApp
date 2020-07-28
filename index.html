@@ -7,36 +7,44 @@
   <title>Computer Graphics</title>
 
   <style>
+
   .value_enter{
-      height: auto;
-      width: 20%;
-      margin: 20px;
+      height: 250px;
+      width: 25%;
+      margin: 20px 20px 20px 20px;
       float: left;
       background: lavenderblush;
   }
   .line_value{
-      height: auto;
-      width: 20%;
-      margin: 20px ;
+      height: 250px;
+      width: 25%;
+      margin: 20px 20px 20px 20px;
       float: left;
       background: lavenderblush;
   }
   .para{
-      height: auto;
-      width: 50%;
-      margin: 20px;
-      background: lavenderblush;
-      float: right;
+      margin: 20px 20px 20px 20px;
+      height: 250px;
+      width: 40%;
+      background: lavenderblush ;
+      float: left;
   }
   button{
+      background:palegreen ;
+      height: 80px;
+      width: 150px;
+      font-size: 20px;
+      font-variant-caps: all-small-caps;
+      margin-top: 50px;
       position:relative;
-      left:35%;
+      left:45%;
   }
   p{
     position:relative;
-    left:10%;
+    left:20%;
   }
   input{
+    margin-left: 10px;
     text-align: center;
   }
 
@@ -69,7 +77,6 @@
   <p>Y<sub>1</sub> = <input type="number" id="y1"></p>
   <p>X<sub>2</sub> = <input type="number" id="x2"></p>
   <p>Y<sub>2</sub> = <input type="number" id="y2"></p><br>
-  <button type="button" name="button" onClick="calc()">Calculate</button><br><br>
   </div>
 
 
@@ -79,6 +86,7 @@
 
   </div>
 
+  <button type="button" name="button" onClick="calc()">Calculate</button><br><br>
 
 <script type="text/javascript">
   var xmin,xmax,ymin,ymax;
