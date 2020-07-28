@@ -14,17 +14,20 @@ function check(x, y){
 }
 
 function calc(){
-  xmin = document.getElementById('xmin').value;
-  xmax = document.getElementById('xmax').value;
-  ymin = document.getElementById('ymin').value;
-  ymax = document.getElementById('ymax').value;
 
-  x1 = document.getElementById('x1').value;
-  y1 = document.getElementById('y1').value;
-  x2 = document.getElementById('x2').value;
-  y2 = document.getElementById('y2').value;
+    xmin = document.getElementById('xmin').value;
+    xmax = document.getElementById('xmax').value;
+    ymin = document.getElementById('ymin').value;
+    ymax = document.getElementById('ymax').value;
 
-  var p1 = check(x2,y2);
-  alert(p1);
+    x1 = document.getElementById('x1').value;
+    y1 = document.getElementById('y1').value;
+    x2 = document.getElementById('x2').value;
+    y2 = document.getElementById('y2').value;
+
+  var p1 = check(x1,y1);
+  var p2 = check(x2,y2);
+
+  document.getElementById('ans').innerHTML+=p1+" "+p2;
 
 }
