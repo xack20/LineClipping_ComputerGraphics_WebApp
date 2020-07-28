@@ -1,12 +1,12 @@
 .value_enter{
-    height: 250px;
+    height: 300px;
     width: 25%;
     margin: 20px 20px 20px 20px;
     float: left;
     background: lavenderblush;
 }
 .line_value{
-    height: 250px;
+    height: 300px;
     width: 25%;
     margin: 20px 20px 20px 20px;
     float: left;
@@ -14,7 +14,7 @@
 }
 .para{
     margin: 20px 20px 20px 20px;
-    height: 250px;
+    height: 300px;
     width: 40.9%;
     background: lavenderblush ;
     float: left;
@@ -27,9 +27,14 @@ button{
     font-variant-caps: all-small-caps;
     margin: 50px 0px 0px 600px;
 }
-.line_value p, .value_enter p{
+.line_value p{
   position:relative;
   left:20%;
+}
+
+.value_enter p{
+  position:relative;
+  left:15%;
 }
 input{
   margin-left: 10px;
