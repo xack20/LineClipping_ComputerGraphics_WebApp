@@ -4,11 +4,11 @@ var x1,y1,x2,y2;
 
 function check(x, y){
 
-  var v = 0 ;
-  if(y > ymax )v|=8;
-  if(y < ymin)v|=4;
-  if(x > xmax)v|=2;
-  if(x < xmin)v|=1;
+  var v = "" ;
+  v = (y > ymax ) ? v.concat("1") : v.concat("0");
+  v = (y < ymin) ? v.concat("1") : v.concat("0");
+  v = (x > xmax) ? v.concat("1") : v.concat("0");
+  v = (x < xmin) ? v.concat("1") : v.concat("0");
 
   return v;
 }
@@ -25,9 +25,15 @@ function calc(){
     x2 = document.getElementById('x2').value;
     y2 = document.getElementById('y2').value;
 
-  var p1 = check(x1,y1);
-  var p2 = check(x2,y2);
+  var p1 = check(x1,y1) , p2 = check(x2,y2);
 
-  document.getElementById('ans').innerHTML+=p1+" "+p2;
+
+
+  var show = "The region code for ( "+x1+", "+y1+" ) is "+check(x1,y1)+"<br>"   +
+             "The region code for ( "+x2+", "+y2+" ) is "+check(x2,y2)+"<br>";
+
+
+
+  document.getElementById('l1').innerHTML = show;
 
 }
