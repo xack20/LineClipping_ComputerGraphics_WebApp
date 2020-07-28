@@ -4,26 +4,39 @@
 
 <style>
 .value_enter{
-    height: 500px;
-    width: 30%;
+    height: 300px;
+    width: 20%;
     padding: 5px;
     margin: 10px;
     float: left;
-
+    background: 	antiquewhite;
 }
 .line_value{
-    height: 500px;
-    width: 30%;
+    height: 300px;
+    width: 20%;
     padding: 5px;
     margin: 10px;
     float: left;
+    background:   antiquewhite;
 }
 .para{
-    height: 800px;
-    width: 40%;
+    height: 500px;
+    width: 50%;
+    margin: 10px;
     padding: 5px;
-    background: mistyrose;
-    float: left;
+    background:  	antiquewhite;
+    float: right;
+}
+button{
+    position:relative;
+    left:30%;
+}
+p{
+  position:relative;
+  left:10%;
+}
+input{
+  text-align: center;
 }
 
 </style>
@@ -33,29 +46,26 @@
 </head>
 
 <body>
+
 <h1 align="center">Line Clipping</h1> <br><br>
 
 <div class="value_enter">
-<h2 >Enter the values</h2>
-
-<p>X<sub>min</sub></p><input type="number" id="xmin">
-<p>X<sub>max</sub></p><input type="number" id="xmax">
-<p>Y<sub>min</sub></p><input type="number" id="ymin">
-<p>Y<sub>max</sub></p><input type="number" id="ymax">
-<br><br>
+<h2 align="center">Clipping Window Size</h2>
+<p>X<sub>min</sub> = <input type="number" id="xmin"></p>
+<p>X<sub>max</sub> = <input type="number" id="xmax"></p>
+<p>Y<sub>min</sub> = <input type="number" id="ymin"></p>
+<p>Y<sub>max</sub> = <input type="number" id="ymax"></p><br>
 <button type="button" onClick="fetch()">Submit</button><br><br>
 
+
 </div>
-
 <div class="line_value">
-<h2>Enter Coordinates for a line</h2>
-<p>X<sub>1</sub></p><input type="number" id="x1">
-<p>Y<sub>1</sub></p><input type="number" id="y1">
-<p>X<sub>2</sub></p><input type="number" id="x2">
-<p>Y<sub>2</sub></p><input type="number" id="y2">
-<br><br>
+<h2 align="center">Lines Coordinates</h2>
+<p>X<sub>1</sub> = <input type="number" id="x1"></p>
+<p>Y<sub>1</sub> = <input type="number" id="y1"></p>
+<p>X<sub>2</sub> = <input type="number" id="x2"></p>
+<p>Y<sub>2</sub> = <input type="number" id="y2"></p><br>
 <button type="button" name="button" onClick="calc()">Calculate</button><br><br>
-
 </div>
 
 
