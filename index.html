@@ -36,8 +36,6 @@
       font-size: 20px;
       font-variant-caps: all-small-caps;
       margin-top: 50px;
-      position:relative;
-      left:45%;
   }
   p{
     position:relative;
@@ -52,6 +50,9 @@
   @media screen and (max-width:800px) {
     .value_enter, .line_value, .para {
       width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+    button{
+      width: 100%;
     }
   }
 
@@ -92,12 +93,6 @@
   var xmin,xmax,ymin,ymax;
   var x1,y1,x2,y2;
 
-  function fetch(){
-    xmin = document.getElementById('xmin').value;
-    xmax = document.getElementById('xmax').value;
-    ymin = document.getElementById('ymin').value;
-    ymax = document.getElementById('ymax').value;
-  }
 
   function check(x, y){
 
@@ -110,11 +105,12 @@
       return v;
   }
 
-  function check(){
-
-  }
-
   function calc(){
+    xmin = document.getElementById('xmin').value;
+    xmax = document.getElementById('xmax').value;
+    ymin = document.getElementById('ymin').value;
+    ymax = document.getElementById('ymax').value;
+
       x1 = document.getElementById('x1').value;
       y1 = document.getElementById('y1').value;
       x2 = document.getElementById('x2').value;
@@ -123,5 +119,8 @@
   }
 
   </script>
+
+
+
 </body>
 </html>
