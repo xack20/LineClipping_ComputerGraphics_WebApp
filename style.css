@@ -1,4 +1,5 @@
 .value_enter{
+    border-radius: 50px;
     height: 310px;
     width: 25%;
     margin: 20px 20px 20px 20px;
@@ -6,6 +7,7 @@
     background: lavenderblush;
 }
 .line_value{
+    border-radius: 50px;
     height: 310px;
     width: 25%;
     margin: 20px 20px 20px 20px;
@@ -13,6 +15,7 @@
     background: lavenderblush;
 }
 .para{
+    border-radius: 50px;
     margin: 20px 20px 20px 20px;
     height: 310px;
     width: 40.9%;
@@ -20,6 +23,7 @@
     float: left;
 }
 button{
+    border-radius: 20px;
     background:pink ;
     height: 80px;
     width: 150px;
@@ -41,8 +45,9 @@ input{
   text-align: center;
 }
 
-p{
-  padding-left: 10px;
+.l1{
+  padding-left: 30px;
+  padding-top: 10px;
 }
 
 /* Use a media query to add a break point at 800px: */
