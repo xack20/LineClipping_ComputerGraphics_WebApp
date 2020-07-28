@@ -20,7 +20,7 @@ function calc(){
              "The region code for ( "+x2+", "+y2+" ) is "+check(x2,y2)+".<br>";
 
   if(p1 == "0000" && p2 == "0000")show+="<br><br><br>The line is <b>Visible</b> because both region code is <b>0000</b>.<br>";
-  else if(p1&p2)show+="<br><br><br>The line is <b>No Visible</b> because the BitWise AND of two ends is <b>not 0000</b>.<br>";
+  else if(p1&p2)show+="<br><br><br>The line is <b>Not Visible</b> because the BitWise AND of two ends is <b>not 0000</b>.<br>";
 
   document.getElementById('l1').innerHTML = show;
 
