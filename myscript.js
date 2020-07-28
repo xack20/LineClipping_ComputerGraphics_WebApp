@@ -27,6 +27,8 @@ function calc(){
 
   var p1 = check(x1,y1) , p2 = check(x2,y2);
 
+  if(p1 == "0000" && p2 == "0000")
+
 
 
   var show = "The region code for ( "+x1+", "+y1+" ) is "+check(x1,y1)+"<br>"   +
