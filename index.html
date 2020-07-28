@@ -1,69 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Computer Graphics</title>
 
-  <style>
-
-  .value_enter{
-      height: 250px;
-      width: 25%;
-      margin: 20px 20px 20px 20px;
-      float: left;
-      background: lavenderblush;
-  }
-  .line_value{
-      height: 250px;
-      width: 25%;
-      margin: 20px 20px 20px 20px;
-      float: left;
-      background: lavenderblush;
-  }
-  .para{
-      margin: 20px 20px 20px 20px;
-      height: 250px;
-      width: 40%;
-      background: lavenderblush ;
-      float: left;
-  }
-  button{
-      background:pink ;
-      height: 80px;
-      width: 150px;
-      font-size: 20px;
-      font-variant-caps: all-small-caps;
-      margin: 50px 0px 0px 600px;
-  }
-  p{
-    position:relative;
-    left:20%;
-  }
-  input{
-    margin-left: 10px;
-    text-align: center;
-  }
-
-  /* Use a media query to add a break point at 800px: */
-  @media screen and (max-width:800px) {
-    .value_enter, .line_value, .para {
-      width:100%; /* The width is 100%, when the viewport is 800px or smaller */
-    }
-    button{
-      width: 100%;
-      margin: 20px 20px 20px 20px;
-    }
-  }
-
-  </style>
-
-
-
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
+
 <body>
+
+
   <br><h1 align="center">Line Clipping</h1> <br>
+
 
   <div class="value_enter">
   <h2 align="center">Clipping Window Size</h2>
@@ -71,6 +23,7 @@
   <p>X<sub>max</sub> = <input type="number" id="xmax"></p>
   <p>Y<sub>min</sub> = <input type="number" id="ymin"></p>
   <p>Y<sub>max</sub> = <input type="number" id="ymax"></p><br>
+
 
   </div>
   <div class="line_value">
@@ -84,43 +37,13 @@
 
   <div class="para">
   <p></p>
-
-
   </div>
+
 
   <button type="button" name="button" onClick="calc()">Calculate</button><br><br>
 
-<script type="text/javascript">
-  var xmin,xmax,ymin,ymax;
-  var x1,y1,x2,y2;
 
-
-  function check(x, y){
-
-      var v = 0 ;
-      if(y > ymax )v|=8;
-      if(y < ymin)v|=4;
-      if(x > xmax)v|=2;
-      if(x < xmin)v|=1;
-
-      return v;
-  }
-
-  function calc(){
-    xmin = document.getElementById('xmin').value;
-    xmax = document.getElementById('xmax').value;
-    ymin = document.getElementById('ymin').value;
-    ymax = document.getElementById('ymax').value;
-
-      x1 = document.getElementById('x1').value;
-      y1 = document.getElementById('y1').value;
-      x2 = document.getElementById('x2').value;
-      y2 = document.getElementById('y2').value;
-      var p1 = check(x2,y2);
-  }
-
-  </script>
-
+  <script src="myscript.js"></script>
 
 
 </body>
