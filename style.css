@@ -15,8 +15,8 @@
     background: lavenderblush;
 }
 .para{
-    overflow: scroll;
-    border-radius: 30px;
+    overflow-y: scroll;
+    border-radius: 50px;
     margin: 20px 20px 20px 20px;
     height: 310px;
     width: 40.9%;
@@ -47,7 +47,8 @@ input{
 }
 
 .l1{
-  padding: 10px 30px 10px 30px;
+  position:relative;
+  left:10%;
 }
 
 /* Use a media query to add a break point at 800px: */
