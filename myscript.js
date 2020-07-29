@@ -3,8 +3,8 @@ var x1,y1,x2,y2,m;
 var P = ["",""];
 
 function regen(n){
-  var xi = (n==1)? x1 : x2;
-  var yi = (n==1)? y1 : y2;
+  var xi = x1;
+  var yi = y1;
   var show="";
 
   if(P[n-1]=="0000")show+="This ( "+xi.toPrecision(3)+", "+yi.toPrecision(3)+" ) End is already in the clipping area.<br>"
@@ -35,11 +35,11 @@ function regen(n){
 
     if(!fx){
       if(m)xi+= ((yi-y1) / m);
-      show+="<b>X<sub>i</sub></b> = X<sub>"+n+"</sub> + ( (Y<sub>i</sub> - Y<sub>"+n+"</sub>) / m ) = <b>"+xi.toPrecision(3)+"</b>.<br>";
+      show+="<b>X<sub>i</sub></b> = X<sub>1</sub> + ( (Y<sub>i</sub> - Y<sub>1</sub>) / m ) = <b>"+xi.toPrecision(3)+"</b>.<br>";
     }
     if(!fy){
       yi+= ((xi-x1) * m);
-      show+="<b>Y<sub>i</sub></b> = Y<sub>"+n+"</sub> + ( (X<sub>i</sub> - X<sub>"+n+"</sub>) * m ) = <b>"+yi.toPrecision(3)+"</b>.<br>";
+      show+="<b>Y<sub>i</sub></b> = Y<sub>1</sub> + ( (X<sub>i</sub> - X<sub>1</sub>) * m ) = <b>"+yi.toPrecision(3)+"</b>.<br>";
     }
 
 
