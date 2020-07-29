@@ -74,7 +74,7 @@ function calc(){
     P[0] = p1;
     P[1] = p2;
     show+="<br>This line is a <b>Clipping Candidate</b> because the BitWise AND of <br> two ends is <b>0000</b>.<br><br>";
-    show+="Value of slope <b>m</b> = (y<sub>2</sub> - y<sub>1</sub>) / (x<sub>2</sub> - x<sub>2</sub>) = <b>"+m.toPrecision(3)+"</b><br>";
+    show+="Value of slope <b>m</b> = (y<sub>2</sub> - y<sub>1</sub>) / (x<sub>2</sub> - x<sub>1</sub>) = <b>"+m.toPrecision(3)+"</b><br>";
     show+=regen(1)+regen(2);
   }
 
