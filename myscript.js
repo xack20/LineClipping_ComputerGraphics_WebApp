@@ -35,11 +35,11 @@ function regen(n){
 
     if(!fx){
       if(m)xi+= ((yi-y1) / m);
-      show+="<b>X<sub>i</sub></b> = X<sub>i</sub> + ( (Y<sub>i</sub> - Y<sub>"+n+"</sub>) / m ) = <b>"+xi.toPrecision(3)+"</b>.<br>";
+      show+="<b>X<sub>i</sub></b> = X<sub>"+n+"</sub> + ( (Y<sub>i</sub> - Y<sub>"+n+"</sub>) / m ) = <b>"+xi.toPrecision(3)+"</b>.<br>";
     }
     if(!fy){
       yi+= ((xi-x1) * m);
-      show+="<b>Y<sub>i</sub></b> = Y<sub>i</sub> + ( (X<sub>i</sub> - X<sub>"+n+"</sub>) * m ) = <b>"+yi.toPrecision(3)+"</b>.<br>";
+      show+="<b>Y<sub>i</sub></b> = Y<sub>"+n+"</sub> + ( (X<sub>i</sub> - X<sub>"+n+"</sub>) * m ) = <b>"+yi.toPrecision(3)+"</b>.<br>";
     }
 
 
