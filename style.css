@@ -15,8 +15,8 @@
     background: lavenderblush;
 }
 .para{
-    overflow-y: scroll;
-    border-radius: 50px;
+    overflow: scroll;
+    border-radius: 30px;
     margin: 20px 20px 20px 20px;
     height: 310px;
     width: 40.9%;
