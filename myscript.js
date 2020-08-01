@@ -55,7 +55,7 @@ function calc() {
         yi += ((xmax - xi) * m);
         xi = xmax;
         show += "<b>X<sub>i</sub></b> = X<sub>max</sub> = <b>" + xi.toPrecision(3) + "</b> ['.' the region code is " + P[0] + P[1] + "<b>" + P[2] + "</b>" + P[3] + " ].<br>";
-        show += "<b>Y<sub>i</sub></b> = Y<sub>1</sub> + ( (X<sub>i</sub> - X<sub>1</sub>) * m ) = <b>" + yi.toPrecision(3).toPrecision(3) + "</b>.<br>";
+        show += "<b>Y<sub>i</sub></b> = Y<sub>1</sub> + ( (X<sub>i</sub> - X<sub>1</sub>) * m ) = <b>" + yi.toPrecision(3) + "</b>.<br>";
       } else if (P[3] == '1') {
         yi += ((xmin - xi) * m);
         xi = xmin;
