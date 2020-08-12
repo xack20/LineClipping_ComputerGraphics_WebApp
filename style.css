@@ -4,7 +4,7 @@
     width: 25%;
     margin: 20px 20px 20px 20px;
     float: left;
-    background: lavenderblush;
+    background: LightSteelBlue;
 }
 .line_value{
     border-radius: 50px;
@@ -12,7 +12,7 @@
     width: 25%;
     margin: 20px 20px 20px 20px;
     float: left;
-    background: lavenderblush;
+    background: LightSteelBlue;
 }
 .para{
     overflow-y: scroll;
@@ -20,12 +20,14 @@
     margin: 20px 20px 20px 20px;
     height: 310px;
     width: 40.9%;
-    background: lavenderblush ;
+    background: LightSteelBlue ;
     float: left;
 }
 button{
     border-radius: 20px;
-    background:pink ;
+
+    background: LightSlateGrey ;
+
     height: 80px;
     width: 150px;
     font-size: 20px;

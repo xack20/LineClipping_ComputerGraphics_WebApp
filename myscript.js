@@ -16,6 +16,9 @@ function calc() {
   var m = ((x2 - x1) ? ((y2 - y1) / (x2 - x1)) : 0);
   var p1 = check(x1, y1);
   var p2 = check(x2, y2);
+
+  var dbg = 0;
+
   var show = "";
   while (true) {
 
@@ -47,7 +50,7 @@ function calc() {
         show += "here, <b>m = </b> (Y<sub>2</sub> - Y<sub>1</sub>) / (X<sub>2</sub> - X<sub>1</sub>) = "+ m.toPrecision(3) + ".<br>";
         show += "<b>X<sub>i</sub></b> = X<sub>1</sub> + ( (Y<sub>i</sub> - Y<sub>1</sub>) / m ) = <b>" + xi.toPrecision(3) + "</b>.<br>";
 
-      } else if (p1[1] == '1') {
+      } else if (P[1] == '1') {
         if (m) xi += ((ymin - yi) / m);
         yi = ymin;
         show += "<b>Y<sub>i</sub></b> = Y<sub>min</sub> = <b>" + yi.toPrecision(3) + "</b> ['.' the region code is " + P[0] + "<b>" + P[1] + "</b>" + P[2] + P[3] + " ].<br>";
@@ -76,7 +79,7 @@ function calc() {
       y2 = yi;
       p2 = check(x2, y2);
     }
-    //document.getElementById('l1').innerHTML = show;
+
   }
   document.getElementById('l1').innerHTML = show;
 }
@@ -85,9 +88,9 @@ function calc() {
 
 function check(x, y) {
   var v = "";
-  v = (y >= ymax) ? v.concat("1") : v.concat("0");
-  v = (y <= ymin) ? v.concat("1") : v.concat("0");
-  v = (x >= xmax) ? v.concat("1") : v.concat("0");
-  v = v.concat((x <= xmin) ? '1' : '0');
+  v = (y > ymax) ? v.concat("1") : v.concat("0");
+  v = (y < ymin) ? v.concat("1") : v.concat("0");
+  v = (x > xmax) ? v.concat("1") : v.concat("0");
+  v = v.concat((x < xmin) ? '1' : '0');
   return v;
 }
