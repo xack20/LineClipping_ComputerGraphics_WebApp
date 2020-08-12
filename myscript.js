@@ -85,9 +85,9 @@ function calc() {
 
 function check(x, y) {
   var v = "";
-  v = (y > ymax) ? v.concat("1") : v.concat("0");
-  v = (y < ymin) ? v.concat("1") : v.concat("0");
-  v = (x > xmax) ? v.concat("1") : v.concat("0");
-  v = v.concat((x < xmin) ? '1' : '0');
+  v = (y >= ymax) ? v.concat("1") : v.concat("0");
+  v = (y <= ymin) ? v.concat("1") : v.concat("0");
+  v = (x >= xmax) ? v.concat("1") : v.concat("0");
+  v = v.concat((x <= xmin) ? '1' : '0');
   return v;
 }
