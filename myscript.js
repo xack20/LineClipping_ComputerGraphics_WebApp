@@ -44,22 +44,26 @@ function calc() {
         if (m) xi += ((ymax - yi) / m);
         yi = ymax;
         show += "<b>Y<sub>i</sub></b> = Y<sub>max</sub> = <b>" + yi.toPrecision(3) + "</b> ['.' the region code is <b>" + P[0] + "</b>" + P[1] + P[2] + P[3] + " ].<br>";
+        show += "here, <b>m = </b> (Y<sub>2</sub> - Y<sub>1</sub>) / (X<sub>2</sub> - X<sub>1</sub>) = "+ m.toPrecision(3) + ".<br>";
         show += "<b>X<sub>i</sub></b> = X<sub>1</sub> + ( (Y<sub>i</sub> - Y<sub>1</sub>) / m ) = <b>" + xi.toPrecision(3) + "</b>.<br>";
 
       } else if (p1[1] == '1') {
         if (m) xi += ((ymin - yi) / m);
         yi = ymin;
         show += "<b>Y<sub>i</sub></b> = Y<sub>min</sub> = <b>" + yi.toPrecision(3) + "</b> ['.' the region code is " + P[0] + "<b>" + P[1] + "</b>" + P[2] + P[3] + " ].<br>";
+        show += "here, <b>m = </b> (Y<sub>2</sub> - Y<sub>1</sub>) / (X<sub>2</sub> - X<sub>1</sub>) = "+ m.toPrecision(3) + ".<br>";
         show += "<b>X<sub>i</sub></b> = X<sub>1</sub> + ( (Y<sub>i</sub> - Y<sub>1</sub>) / m ) = <b>" + xi.toPrecision(3) + "</b>.<br>";
       } else if (P[2] == '1') {
         yi += ((xmax - xi) * m);
         xi = xmax;
         show += "<b>X<sub>i</sub></b> = X<sub>max</sub> = <b>" + xi.toPrecision(3) + "</b> ['.' the region code is " + P[0] + P[1] + "<b>" + P[2] + "</b>" + P[3] + " ].<br>";
+        show += "here, <b>m = </b> (Y<sub>2</sub> - Y<sub>1</sub>) / (X<sub>2</sub> - X<sub>1</sub>) = "+ m.toPrecision(3) + ".<br>";
         show += "<b>Y<sub>i</sub></b> = Y<sub>1</sub> + ( (X<sub>i</sub> - X<sub>1</sub>) * m ) = <b>" + yi.toPrecision(3) + "</b>.<br>";
       } else if (P[3] == '1') {
         yi += ((xmin - xi) * m);
         xi = xmin;
         show += "<b>X<sub>i</sub></b> = X<sub>min</sub> = <b>" + xi.toPrecision(3) + "</b> ['.' the region code is " + P[0] + P[1] + P[2] + "<b>" + P[3] + "</b> ].<br>";
+        show += "here, <b>m = </b> (Y<sub>2</sub> - Y<sub>1</sub>) / (X<sub>2</sub> - X<sub>1</sub>) = "+ m.toPrecision(3) + ".<br>";
         show += "<b>Y<sub>i</sub></b> = Y<sub>1</sub> + ( (X<sub>i</sub> - X<sub>1</sub>) * m ) = <b>" + yi.toPrecision(3) + "</b>.<br>";
       }
     }
